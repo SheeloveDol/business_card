@@ -21,6 +21,14 @@ class MyApp extends StatelessWidget {
                 radius: 50.0,
                 backgroundImage: AssetImage('images/ProfileHeadshot.jpeg'),
               ),
+              Text(
+                'Sheelove Dol',
+                style: TextStyle(
+                  fontFamily: 'Audiowide',
+                  fontSize: 40.0,
+                  color: Colors.white,
+                ),
+              )
             ],
           ),
         ),
