@@ -28,7 +28,15 @@ class MyApp extends StatelessWidget {
                   fontSize: 40.0,
                   color: Colors.white,
                 ),
-              )
+              ),
+              Text(
+                'WEB/MOBILE DEVELOPER',
+                style: TextStyle(
+                    fontFamily: 'SourceSans3',
+                    fontSize: 20.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
             ],
           ),
         ),
