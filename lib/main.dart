@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
@@ -11,18 +13,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Center(
             child: Column(
               children: <Widget>[
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 50.0,
                   backgroundImage: AssetImage('images/ProfileHeadshot.jpeg'),
                 ),
-                Text(
+                const Text(
                   'Sheelove Dol',
                   style: TextStyle(
                     fontFamily: 'Audiowide',
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                Text(
+                const Text(
                   'WEB/MOBILE DEVELOPER',
                   style: TextStyle(
                       fontFamily: 'SourceSans3',
@@ -38,6 +40,42 @@ class MyApp extends StatelessWidget {
                       fontSize: 20.0,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
+                ),
+                Container(
+                  margin: const EdgeInsets.symmetric(
+                      vertical: 10.0, horizontal: 55.0),
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 10.0, horizontal: 25.0),
+                  color: Colors.white,
+                  child: Row(children: <Widget>[
+                    const Icon(Icons.phone, color: Colors.teal),
+                    const SizedBox(width: 25.0),
+                    Text(
+                      '+1 778 714 2747',
+                      style: TextStyle(
+                        color: Colors.teal[900],
+                        fontSize: 18.0,
+                      ),
+                    ),
+                  ]),
+                ),
+                Container(
+                  margin: const EdgeInsets.symmetric(
+                      vertical: 10.0, horizontal: 55.0),
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 10.0, horizontal: 25.0),
+                  color: Colors.white,
+                  child: Row(children: <Widget>[
+                    const Icon(Icons.email, color: Colors.teal),
+                    const SizedBox(width: 25.0),
+                    Text(
+                      '+1 778 714 2747',
+                      style: TextStyle(
+                        color: Colors.teal[900],
+                        fontSize: 18.0,
+                      ),
+                    ),
+                  ]),
                 ),
               ],
             ),
