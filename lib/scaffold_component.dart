@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mi_card_flutter/circle_avatar.dart';
 import 'package:mi_card_flutter/email_card.dart';
+import 'package:mi_card_flutter/name_text.dart';
+import 'package:mi_card_flutter/occupation.dart';
 import 'package:mi_card_flutter/phone_card.dart';
 
 class ScaffoldComponent extends StatelessWidget {
@@ -16,23 +18,8 @@ class ScaffoldComponent extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               const CircleAvatarComponent(image: 'images/ProfileHeadshot.jpeg'),
-              const Text(
-                'Sheelove Dol',
-                style: TextStyle(
-                  fontFamily: 'Audiowide',
-                  fontSize: 40.0,
-                  color: Colors.white,
-                ),
-              ),
-              const Text(
-                'WEB/MOBILE DEVELOPER',
-                style: TextStyle(
-                    fontFamily: 'SourceSans3',
-                    letterSpacing: 2.0,
-                    fontSize: 20.0,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold),
-              ),
+              const NameText(nameText: 'Sheelove Dol'),
+              const Occupation(occupation: 'WEB/MOBILE DEVELOPER'),
               SizedBox(
                   height: 20.0,
                   width: 150.0,
