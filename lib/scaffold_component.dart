@@ -33,3 +33,4 @@ class ScaffoldComponent extends StatelessWidget {
     );
   }
 }
+// TODO: Make it RESPONSIVE WITH SMALLER SCREENS
